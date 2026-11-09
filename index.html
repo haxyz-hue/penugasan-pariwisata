@@ -1,15 +1,15 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JelajahWisataIndonesia</title>
+    <meta name="description" content="Jelajahi keindahan alam dan budaya Indonesia bersama Jelajah Wisata Indonesia.">
+    <title>Jelajah Wisata Indonesia</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navbar Pembuka -->
+    <!-- Navbar -->
     <nav>
         <div class="wrapper navbar">
             <div class="logo">
@@ -17,6 +17,7 @@
             </div>
 
             <button class="menu-toggle"
+                type="button"
                 aria-label="Buka menu"
                 aria-expanded="false">☰</button>
 
@@ -26,22 +27,21 @@
                     <li><a href="#online">Destinasi</a></li>
                     <li><a href="#offline">Tentang Kami</a></li>
                     <li><a href="#partner">Hubungi Kami</a></li>
-                    <li><a class="c:\Users\hanzz\Downloads\magnifier.png" href="#online">⌕</a></li>
-                    <li><a class="icon-link" href="#partner">♙</a></li>
-                    <li><a class="icon-link" href="#booking">✈</a></li>
+                    <li><a href="#online" aria-label="Cari destinasi">⌕</a></li>
+                    <li><a class="icon-link" href="#partner" aria-label="Kontak">♙</a></li>
+                    <li><a class="icon-link" href="#booking" aria-label="Booking">✈</a></li>
                     <li><a href="#booking" class="order">Pesan Wisata</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Section Banner -->
+    <!-- Banner Utama -->
     <main>
         <div class="wrapper">
 
             <section id="home" class="hero">
                 <div class="kolom">
-
                     <h1>Jelajahi Keindahan Wisata Indonesia</h1>
 
                     <p class="deskripsi">
@@ -55,16 +55,15 @@
                     <a href="#online" class="reservasi">
                         Jelajahi Sekarang
                     </a>
-
                 </div>
 
                 <img class="gambar"
-                    src="pages/Jelajah Wisata Indonesia.png">
+                    src="pages/Jelajah Wisata Indonesia.png"
+                    alt="Ilustrasi Jelajah Wisata Indonesia">
             </section>
 
             <!-- Pilihan Destinasi -->
             <section id="online" class="menu-section">
-
                 <h2>Destinasi Wisata Populer</h2>
 
                 <div class="menu-grid">
@@ -81,7 +80,8 @@
                     </article>
 
                     <article class="menu-card">
-                        <img src="pages/Dilema Kunjungan Candi Borobudur, Antara Konservasi dan Kebutuhan Edukasi.jpg" alt="Candi Borobudur">
+                        <img src="pages/Dilema Kunjungan Candi Borobudur, Antara Konservasi dan Kebutuhan Edukasi.jpg"
+                            alt="Candi Borobudur">
                         <div class="card-content">
                             <h3>Candi Borobudur</h3>
                             <p>
@@ -92,7 +92,8 @@
                     </article>
 
                     <article class="menu-card">
-                        <img src="pages/b6fbb3f7e06952df1e88f97389989b65.jpg" alt="Raja Ampat">
+                        <img src="pages/b6fbb3f7e06952df1e88f97389989b65.jpg"
+                            alt="Pemandangan Raja Ampat">
                         <div class="card-content">
                             <h3>Raja Ampat</h3>
                             <p>
@@ -103,7 +104,8 @@
                     </article>
 
                     <article class="menu-card">
-                        <img src="pages/Gunung Bromo Jawa Timur.jpg" alt="Gunung Bromo">
+                        <img src="pages/Gunung Bromo Jawa Timur.jpg"
+                            alt="Gunung Bromo">
                         <div class="card-content">
                             <h3>Gunung Bromo</h3>
                             <p>
@@ -114,7 +116,8 @@
                     </article>
 
                     <article class="menu-card">
-                        <img src="pages/Danau Toba Indonesia.jpg" alt="Danau Toba">
+                        <img src="pages/Danau Toba Indonesia.jpg"
+                            alt="Danau Toba">
                         <div class="card-content">
                             <h3>Danau Toba</h3>
                             <p>
@@ -125,7 +128,8 @@
                     </article>
 
                     <article class="menu-card">
-                        <img src="pages/Komodo National Park, Labuan Bajo, East Nusa Tenggara, Indonesia.jpg" alt="Labuan Bajo">
+                        <img src="pages/Komodo National Park, Labuan Bajo, East Nusa Tenggara, Indonesia.jpg"
+                            alt="Pemandangan Labuan Bajo">
                         <div class="card-content">
                             <h3>Labuan Bajo</h3>
                             <p>
@@ -140,9 +144,8 @@
         </div>
     </main>
 
-    <!-- Section Booking Wisata -->
+    <!-- Booking Wisata -->
     <section class="book-table" id="booking">
-
         <div class="book-container">
 
             <div class="book-title">
@@ -156,45 +159,46 @@
             <div class="booking-content">
                 <form class="booking-form">
 
-                <div class="form-group">
-                    <label>Nama Lengkap</label>
-                    <input type="text"
-                        placeholder="Masukkan nama Anda" required>
-                </div>
+                    <div class="form-group">
+                        <label for="name">Nama Lengkap</label>
+                        <input type="text" id="name" name="name"
+                            placeholder="Masukkan nama Anda" required>
+                    </div>
 
-                <div class="form-group">
-                    <label>Email</label>
-                    <input type="email"
-                        placeholder="Masukkan email Anda" required>
-                </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email"
+                            placeholder="Masukkan email Anda" required>
+                    </div>
 
-                <div class="form-group">
-                    <label>Nomor Telepon</label>
-                    <input type="tel"
-                        placeholder="Masukkan nomor telepon" required>
-                </div>
+                    <div class="form-group">
+                        <label for="phone">Nomor Telepon</label>
+                        <input type="tel" id="phone" name="phone"
+                            placeholder="Masukkan nomor telepon" required>
+                    </div>
 
-                <div class="form-group">
-                    <label>Pilih Destinasi</label>
-                    <select id="destination" required>
-                        <option value="">Pilih destinasi wisata</option>
-                        <option value="Pantai Kuta, Bali">Pantai Bali</option>
-                        <option value="Candi Borobudur, Magelang">Candi Borobudur</option>
-                        <option value="Raja Ampat, Papua Barat">Raja Ampat</option>
-                        <option value="Gunung Bromo, Jawa Timur">Gunung Bromo</option>
-                        <option value="Danau Toba, Sumatra Utara">Danau Toba</option>
-                        <option value="Labuan Bajo, Nusa Tenggara Timur">Labuan Bajo</option>
-                    </select>
-                </div>
+                    <div class="form-group">
+                        <label for="destination">Pilih Destinasi</label>
+                        <select id="destination" name="destination" required>
+                            <option value="">Pilih destinasi wisata</option>
+                            <option value="Pantai Kuta, Bali">Pantai Bali</option>
+                            <option value="Candi Borobudur, Magelang">Candi Borobudur</option>
+                            <option value="Raja Ampat, Papua Barat">Raja Ampat</option>
+                            <option value="Gunung Bromo, Jawa Timur">Gunung Bromo</option>
+                            <option value="Danau Toba, Sumatra Utara">Danau Toba</option>
+                            <option value="Labuan Bajo, Nusa Tenggara Timur">Labuan Bajo</option>
+                        </select>
+                    </div>
 
-                <div class="form-group">
-                    <label>Tanggal Perjalanan</label>
-                    <input type="date" required>
-                </div>
+                    <div class="form-group">
+                        <label for="travel-date">Tanggal Perjalanan</label>
+                        <input type="date" id="travel-date"
+                            name="travel-date" required>
+                    </div>
 
-                <button type="submit" class="book-btn">
-                    Pesan Sekarang
-                </button>
+                    <button type="submit" class="book-btn">
+                        Pesan Sekarang
+                    </button>
 
                 </form>
 
@@ -203,6 +207,7 @@
                         <h3>Lokasi Destinasi</h3>
                         <p>Pilih destinasi untuk melihat lokasinya di peta.</p>
                     </div>
+
                     <iframe
                         id="destination-map"
                         src="https://www.google.com/maps?q=Indonesia&amp;output=embed"
@@ -211,8 +216,8 @@
                         referrerpolicy="no-referrer-when-downgrade"
                         allowfullscreen>
                     </iframe>
-                    <a
-                        class="map-link"
+
+                    <a class="map-link"
                         id="open-map"
                         href="https://www.google.com/maps?q=Indonesia"
                         target="_blank"
@@ -224,9 +229,8 @@
         </div>
     </section>
 
-    <!-- Section Komentar Pengunjung -->
+    <!-- Ulasan Pengunjung -->
     <section class="testimonials" id="testimonials">
-
         <div class="testimonial-container">
 
             <div class="testimonial-title">
@@ -236,57 +240,46 @@
 
             <div class="testimonial-grid">
 
-                <!-- Komentar 1 -->
-                <div class="testimonial-card">
+                <article class="testimonial-card">
                     <div class="testimonial-icon">"</div>
-
                     <p>
                         Pemandangan wisatanya sangat indah.
                         Pengalaman liburan yang menyenangkan
                         dan tidak terlupakan.
                     </p>
-
                     <h3>Andi Saputra</h3>
                     <span>Wisatawan</span>
-                </div>
+                </article>
 
-                <!-- Komentar 2 -->
-                <div class="testimonial-card">
+                <article class="testimonial-card">
                     <div class="testimonial-icon">"</div>
-
                     <p>
                         Banyak pilihan destinasi wisata yang menarik.
                         Sangat cocok untuk liburan bersama keluarga.
                     </p>
-
                     <h3>Siti Nurhaliza</h3>
                     <span>Wisatawan</span>
-                </div>
+                </article>
 
-                <!-- Komentar 3 -->
-                <div class="testimonial-card">
+                <article class="testimonial-card">
                     <div class="testimonial-icon">"</div>
-
                     <p>
                         Tempat wisatanya bersih, nyaman,
                         dan memiliki pemandangan alam
                         yang sangat memuaskan.
                     </p>
-
                     <h3>Budi Santoso</h3>
                     <span>Wisatawan</span>
-                </div>
+                </article>
 
             </div>
         </div>
     </section>
 
-    <!-- Section Footer -->
+    <!-- Footer -->
     <footer class="footer" id="partner">
-
         <div class="footer-container">
 
-            <!-- Contact Us -->
             <div class="footer-column contact">
                 <h2>Contact Us</h2>
 
@@ -303,7 +296,6 @@
                 </div>
             </div>
 
-            <!-- About -->
             <div class="footer-column about" id="offline">
                 <h2>JelajahNusantara</h2>
 
@@ -314,24 +306,23 @@
                 </div>
 
                 <div class="social-icons">
-                    <a href="#">
+                    <a href="#" aria-label="Facebook">
                         <img src="pages/facebook.png"
-                            style="width: 30px;" alt="Facebook">
+                            alt="Facebook" width="30">
                     </a>
 
-                    <a href="#">
+                    <a href="#" aria-label="Instagram">
                         <img src="pages/instagram.png"
-                            style="width: 30px;" alt="Instagram">
+                            alt="Instagram" width="30">
                     </a>
 
-                    <a href="#">
-                        <img src="pages/twitter (1).png"
-                            style="width: 30px;" alt="Twitter">
+                    <a href="#" aria-label="Twitter">
+                        <img src="pages/Downloads/twitter (1).png"
+                            alt="Twitter" width="30">
                     </a>
                 </div>
             </div>
 
-            <!-- Opening Hours -->
             <div class="footer-column about">
                 <h2>Jam Pelayanan</h2>
 
@@ -349,6 +340,6 @@
 
         </div>
     </footer>
-    
+
 </body>
 </html>
